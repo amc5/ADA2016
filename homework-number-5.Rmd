@@ -87,7 +87,7 @@ library(sciplot)
   }
 
 head(s)
-sd(s[,1]) #returns standard error for the y-intercept
+sd(s[,1]) #returns standard error for the y-intercept 
 #0.6127816
 sd(s[,2]) #returns the standard error the the slope
 #0.07816466
