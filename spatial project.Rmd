@@ -72,10 +72,12 @@ __Grid__: collection of points or rectangular cells, organised in a regular latt
 <img src="img/polygons.jpg" height="420px"/>
 
 ##Current research and applications
-Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75. <img src="img/malaria.jpg" height="600px"/>
+Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75. 
 * Meta-analysis to quantify the global distribution, host range, and diversity of non-human primate malarias globally
 * Using R, survey data was merged with IUCN spatial data for priamte species geographic range
 * This map shows prevalence of primate malarias by region. Non-white portions of pie charts show proportion infected and reflect sampling method
+
+<img src="img/malaria.jpg" height="600px"/>
 
 Williams AN, Ulm S, Cook AR, Langley MC, Collard M. 2013. Human refugia in Australia during the Last Glacial Maximum and Terminal Pleistocene: a geospatial analysis of the 25-12 ka Australian archaeological record. Journal of Archaeological Science 40:4612-4625.
 * Evaluate models of Aboriginal Australian popoulation response to climate change using comprehensive continent-wide dataset of archaeological radiocarbon ages and geospatial techniques.
