@@ -1,8 +1,8 @@
 ---
 title: "spatial_gp"
 output: html_document:
-  toc: TRUE
-  toc_float: TRUE
+  toc: true
+  toc_float: true
 ---
 
 ```{r}
