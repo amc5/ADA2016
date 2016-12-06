@@ -23,7 +23,7 @@ library(rmarkdown)
 
 #Geospatial Data Analysis
 ##December 8, 2016
-###Rachel, Allison & Silvy
+###Rachel, Allison & Silvy 
 
 ##Objectives: 
 >In this lession, you will learn about geospatial information and the analyses that can be done with it. We will download, manipulate, and transform data sets. Data can be projected in different ways for different purposes. We will use both home range data and geographic range data for our examples, and overlay these layers with other relevant data layers, such as altitude and land forms. This data can be visually and statistically analyzed. Finally, we will create a publication ready map!
