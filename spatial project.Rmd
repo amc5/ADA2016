@@ -1,6 +1,7 @@
 ---
-title: "spatial_gp"
-output: html_document:
+title: "Geospatial Data Analysis"
+output: 
+html_fragment:
   toc: true
   toc_float: true
 ---
@@ -17,10 +18,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
-library(rmarkdown)
-```
-
 #Geospatial Data Analysis
 ##December 8, 2016
 ###Rachel, Allison & Silvy 
@@ -31,6 +28,9 @@ library(rmarkdown)
 Geospatial information is critical for analyzing data on landscapes, range, demographics, etc. Visualizing geospatial data on a map is helpful for thinking about the implications of your results. Spatial data analyses address questions that cannot be answered by simply looking at the data themselves, and are concerned with the quantitative location of important features. Geospatial data has a geographic component to it. It is used to plot locations, regions, ranges, etc. 
 
 ##Why use R??
+
+<img src="img/dora2.gif" width="420px"/>
+
 You can project anything that you want on a map using geospatial methods in R. Developers have been creating and updating R spatial data packages for the alst 10 years. R is equipped to handle the large data sets that are often required for spatial analysis. Geographic Information Systems (GIS) is a computer based system to aid in the collection, maintenance, storage, analysis, output, and distribution of spatial data and information. However, ArcGIS is a very expensive software ($1,500 for a single license), but all of its skills and tricks can be done in R for free!
 
 ##Applications:
@@ -42,6 +42,7 @@ You can project anything that you want on a map using geospatial methods in R. D
 
 ##Useful skills:
 * __Install__ basemaps from multiple sources
+* __Subsetting__ internet based data
 * __Create__ and/or download shapefiles
 * __Manipulate__ shapefiles and polygons
 * __Access__, __analyze__, and __transform__ metadata
@@ -68,7 +69,7 @@ __Polygon__: area, marked by one or more enclosing lines, possibly containing ho
 
 __Grid__: collection of points or rectangular cells, organised in a regular lattice (raster data)    
 
-<img src="img/polygons.jpg" width="420px"/>
+<img src="img/polygons.jpg" height="420px"/>
 
 ##Current research and applications
 Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75.
@@ -76,7 +77,7 @@ Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights
 * Using R, survey data was merged with IUCN spatial data for priamte species geographic range
 * This map shows prevalence of primate malarias by region. Non-white portions of pie charts show proportion infected and reflect sampling method
 
-<img src="img/malaria.jpg" width="420px"/>
+<img src="img/malaria.jpg" height="250px"/>
 
 Williams AN, Ulm S, Cook AR, Langley MC, Collard M. 2013. Human refugia in Australia during the Last Glacial Maximum and Terminal Pleistocene: a geospatial analysis of the 25-12 ka Australian archaeological record. Journal of Archaeological Science 40:4612-4625.
 * Evaluate models of Aboriginal Australian popoulation response to climate change using comprehensive continent-wide dataset of archaeological radiocarbon ages and geospatial techniques.
@@ -88,14 +89,13 @@ Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat asso
 * Using GIS methods from field work GPS points, authors found that various social groups of the same species overalp in space, but rarely interact socially, perhaps based on kinship and cooperation.
 * Map shows different habitat types (in gray) and roosting home range polygons of 21 social groups of _Thyroptera tricolor_
 
-<img src="img/bats.jpg" width="420px"/>
+<img src="img/bats.jpg" height="400px"/>
  
 ##Additional resourcese and useful links
 ["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)  
 ["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)   
 ["Introduction to Visualizing Spatial Data in R"] (https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf)
 
-<img src="img/dora2.gif" width="420px"/>
 
 ```{r}
 ## Simulate 10 realizations of a Poisson random variable
