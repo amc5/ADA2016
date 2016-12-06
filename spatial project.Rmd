@@ -21,19 +21,13 @@ knitr::opts_chunk$set(
 ##December 8, 2016
 ###Rachel, Allison & Silvy
 
+##Objectives: 
+>In this lession, you will learn about geospatial information and the analyses that can be done with it. We will download, manipulate, and transform data sets. Data can be projected in different ways for different purposes. We will use both home range data and geographic range data for our examples, and overlay these layers with other relevant data layers, such as altitude and land forms. This data can be visually and statistically analyzed. Finally, we will create a publication ready map!
+
 Geospatial information is critical for analyzing data on landscapes, range, demographics, etc. Visualizing geospatial data on a map is helpful for thinking about the implications of your results. Spatial data analyses address questions that cannot be answered by simply looking at the data themselves, and are concerned with the quantitative location of important features. Geospatial data has a geographic component to it. It is used to plot locations, regions, ranges, etc. 
 
 ##Why use R??
 You can project anything that you want on a map using geospatial methods in R. Developers have been creating and updating R spatial data packages for the alst 10 years. R is equipped to handle the large data sets that are often required for spatial analysis. Geographic Information Systems (GIS) is a computer based system to aid in the collection, maintenance, storage, analysis, output, and distribution of spatial data and information. However, ArcGIS is a very expensive software ($1,500 for a single license), but all of its skills and tricks can be done in R for free!
-
-##Objectives: 
-* Explain geospatial data uses and applications
-* Find, download, and manipulate data
-* Display population home range data
-* Display taxa geographic range data
-* Overlay data layers from multiple sources
-* Visually and statistically analyze metadata
-* Create a publication ready map
 
 ##Applications:
 * Create maps
@@ -50,7 +44,7 @@ You can project anything that you want on a map using geospatial methods in R. D
 * MAPS, MAPS, MAPS!
 
 ##Key Concepts
-__Geographic coordinate system__ is a common spherical coordinate reference system for specifying location of features on the curved surface of the earth used to define the spatial location and extent of geographic objects. Coordinates define location in two or three-dimensional space. Coordinate pairs, x and y, or coordinate triples, x, y, and z, are used to define the shape and location of each spatial object or phenomenon. Coordinates represent the longitude and latitude of a specific point on a map. The longitude is the east or west location of a point, and the latitude is the north or south location of a point.    
+__Geographic coordinate system__ is a common spherical coordinate reference system for specifying location of features on the curved surface of the earth used to define the spatial location and extent of geographic objects. Coordinates define location in two or three-dimensional space. Coordinate pairs, x and y, or coordinate triples, x, y, and z, are used to define the shape and location of each spatial object or phenomenon. The longitude is the east or west location of a point, and the latitude is the north or south location of a point.    
 
 __The Universal Transverse Mercator projection__ is a cylindrical projection of the world's layout on a map that touches at the equator. A projection is a mathematical transformation of the globe onto some other surface, in this case, a grid. UTM is the typical projection used in GIS and spatial analyses.    
 
@@ -81,7 +75,7 @@ Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights
 
 ##Additional resourcese and useful links
 ["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)  
-["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html) 
+["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)   
 ["Introduction to Visualizing Spatial Data in R"] (https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf)
 
 ```{r}
