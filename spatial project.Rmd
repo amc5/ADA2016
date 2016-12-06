@@ -1,6 +1,8 @@
 ---
 title: "spatial_gp"
-output: html_document
+output: html_document:
+  toc: TRUE
+  toc_float: TRUE
 ---
 
 ```{r}
@@ -12,8 +14,6 @@ knitr::opts_chunk$set(
     tidy = TRUE,
     tidy.opts = list(width.cutoff = 75),
     fig.path = "img/",
-    toc = TRUE,
-    toc_float = TRUE
 )
 ```
 
@@ -71,7 +71,7 @@ image: ![Example of the different attributes: points, lines, polygons, and grids
 Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75.
 
 ##Additional resourcese and useful links
-["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)
+["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)  
 ["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html) 
 
 
