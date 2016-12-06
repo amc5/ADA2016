@@ -63,7 +63,7 @@ __Raster data__ models are the natural means to represent continuous spatial fea
 
 __Coordinate systems__ must be defined from the start of a project.     
 
-__Point__: single point location, such as a GPS reading or a geocoded address     
+__Point__: single point location, such as a GPS reading or a geocoded address  
 
 __Line__: set of ordered points, connected by straight line segments    
 
