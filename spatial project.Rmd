@@ -51,14 +51,23 @@ You can project anything that you want on a map using geospatial methods in R. D
 
 ##Key Concepts
 __Geographic coordinate system__ is a common spherical coordinate reference system for specifying location of features on the curved surface of the earth used to define the spatial location and extent of geographic objects. Coordinates define location in two or three-dimensional space. Coordinate pairs, x and y, or coordinate triples, x, y, and z, are used to define the shape and location of each spatial object or phenomenon. Coordinates represent the longitude and latitude of a specific point on a map. The longitude is the east or west location of a point, and the latitude is the north or south location of a point.    
+
 __The Universal Transverse Mercator projection__ is a cylindrical projection of the world's layout on a map that touches at the equator. A projection is a mathematical transformation of the globe onto some other surface, in this case, a grid. UTM is the typical projection used in GIS and spatial analyses.    
-__Attributes__ are feature characteristics that can be plotted on a map.    
-__Vector data__ models use discrete elements such as points, lines, and polygons to represent the geometry of real-world entities.    
+
+__Attributes__ are feature characteristics that can be plotted on a map.   
+
+__Vector data__ models use discrete elements such as points, lines, and polygons to represent the geometry of real-world entities.
+
 __Raster data__ models are the natural means to represent continuous spatial features or phenomenon. They define the world as a regular set of cells in a grid pattern that are square and evenly spaced in the x and y directions.    
+
 __Coordinate systems__ must be defined from the start of a project.     
+
 __Point__: single point location, such as a GPS reading or a geocoded address    
+
 __Line__: set of ordered points, connected by straight line segments    
-__Polygon__: area, marked by one or more enclosing lines, possibly containing holes    
+
+__Polygon__: area, marked by one or more enclosing lines, possibly containing holes 
+
 __Grid__: collection of points or rectangular cells, organised in a regular lattice (raster data)    
 
 image: ![Example of the different attributes: points, lines, polygons, and grids]("C:\Users\Allison\Desktop\img\polygons.jpg")
