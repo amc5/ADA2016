@@ -53,7 +53,6 @@ You can project anything that you want on a map using geospatial methods in R. D
 __Geographic coordinate system__ is a common spherical coordinate reference system for specifying location of features on the curved surface of the earth used to define the spatial location and extent of geographic objects. Coordinates define location in two or three-dimensional space. Coordinate pairs, x and y, or coordinate triples, x, y, and z, are used to define the shape and location of each spatial object or phenomenon. The longitude is the east or west location of a point, and the latitude is the north or south location of a point.    
 
 __The Universal Transverse Mercator projection__ is a cylindrical projection of the world's layout on a map that touches at the equator. A projection is a mathematical transformation of the globe onto some other surface, in this case, a grid. UTM is the typical projection used in GIS and spatial analyses.    
-<img src="img/utm.jpg" width="420px"/>
 
 __Attributes__ are feature characteristics that can be plotted on a map.   
 
@@ -78,16 +77,19 @@ Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights
 * Meta-analysis to quantify the global distribution, host range, and diversity of non-human primate malarias globally
 * Using R, survey data was merged with IUCN spatial data for priamte species geographic range
 * This map shows prevalence of primate malarias by region. Non-white portions of pie charts show proportion infected and reflect sampling method
+
 <img src="img/malaria.jpg" width="420px"/>
 
 Williams AN, Ulm S, Cook AR, Langley MC, Collard M. 2013. Human refugia in Australia during the Last Glacial Maximum and Terminal Pleistocene: a geospatial analysis of the 25-12 ka Australian archaeological record. Journal of Archaeological Science 40:4612-4625.
 * Evaluate models of Aboriginal Australian popoulation response to climate change using comprehensive continent-wide dataset of archaeological radiocarbon ages and geospatial techniques.
 * Used ArcGIS, R, and Geospatial Modelling Environment (GME) 
+
 <img src="img/australia.jpg" width="420px"/>
 
 Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat association patterns and roosting home ranges reveal a novel social structure among bats. Animal Behavior 68:507-521.
 * Using GIS methods from field work GPS points, authors found that various social groups of the same species overalp in space, but rarely interact socially, perhaps based on kinship and cooperation.
 * Map shows different habitat types (in gray) and roosting home range polygons of 21 social groups of _Thyroptera tricolor_
+
 <img src="img/bats.jpg" width="420px"/>
 
 ##Additional resourcese and useful links
@@ -96,13 +98,5 @@ Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat asso
 ["Introduction to Visualizing Spatial Data in R"] (https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf)
 
 
-```{r}
-install.packages("EBImage")
-library(EBImage) #comp cant find package
-g <- system.file("img", "dora.gif", package = "EBImage")
-gif <- readImage(g)
-display(gif)
-````
-
-image: ![We're the map!]("http://cdn.elciudadano.cl/wp-content/uploads/2015/03/Mapa-dora.gif")
+image: ![We're the map!]
 <img src="img/dora.gif" width="420px"/>
