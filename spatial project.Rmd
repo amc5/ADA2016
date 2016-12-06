@@ -26,7 +26,7 @@ library(rmarkdown)
 ###Rachel, Allison & Silvy 
 
 ##Objectives: 
->In this lession, you will learn about geospatial information and the analyses that can be done with it. We will download, manipulate, and transform data sets. Data can be projected in different ways for different purposes. We will use both home range data and geographic range data for our examples, and overlay these layers with other relevant data layers, such as altitude and land forms. This data can be visually and statistically analyzed. Finally, we will create a publication ready map!
+>In this lesson, you will learn about geospatial information and the analyses that can be done with it. We will download, manipulate, and transform data sets. Data can be projected in different ways for different purposes. We will use both home range data and geographic range data for our examples, and overlay these layers with other relevant data layers, such as altitude and land forms. This data can be visually and statistically analyzed. Finally, we will create a publication ready map!
 
 Geospatial information is critical for analyzing data on landscapes, range, demographics, etc. Visualizing geospatial data on a map is helpful for thinking about the implications of your results. Spatial data analyses address questions that cannot be answered by simply looking at the data themselves, and are concerned with the quantitative location of important features. Geospatial data has a geographic component to it. It is used to plot locations, regions, ranges, etc. 
 
@@ -59,8 +59,6 @@ __Attributes__ are feature characteristics that can be plotted on a map.
 __Vector data__ models use discrete elements such as points, lines, and polygons to represent the geometry of real-world entities.
 
 __Raster data__ models are the natural means to represent continuous spatial features or phenomenon. They define the world as a regular set of cells in a grid pattern that are square and evenly spaced in the x and y directions.    
-
-__Coordinate systems__ must be defined from the start of a project.     
 
 __Point__: single point location, such as a GPS reading or a geocoded address  
 
@@ -97,6 +95,17 @@ Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat asso
 ["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)   
 ["Introduction to Visualizing Spatial Data in R"] (https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf)
 
+<img src="img/dora2.gif" width="420px"/>
 
-image: ![We're the map!]
-<img src="img/dora.gif" width="420px"/>
+```{r}
+## Simulate 10 realizations of a Poisson random variable
+for (i in 1:10) {
+    print(rpois(n = 1, lambda = 5))
+}
+library(spatstat)
+magicLand <- rpoispp(lambda = 0.5, win = owin(c(0, 10), c(0, 10)))
+plot(magicLand)
+plot(rpoispp(lambda = 0.5, win = owin(c(0, 10), c(0, 10))))
+# window area and number of points
+summary(magicLand)
+magicLand$n/100  #this is the intensity of the simulated map
