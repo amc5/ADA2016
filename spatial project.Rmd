@@ -49,17 +49,6 @@ You can project anything that you want on a map using geospatial methods in R. D
 * __Access__, __analyze__, and __transform__ metadata
 * MAPS, MAPS MAPS!
 
-```{r}
-install.packages("EBImage")
-library(EBImage) #comp cant find package
-g <- system.file("img", "dora.gif", package = "EBImage")
-gif <- readImage(g)
-display(gif)
-````
-
-image: ![We're the map!]("http://cdn.elciudadano.cl/wp-content/uploads/2015/03/Mapa-dora.gif")
-<img src="img/dora.gif/>"
-
 ##Key Concepts
 __Coordinates__ are used to define the spatial location and extent of geographic objects. Coordinates define location in two or three-dimensional space. Coordinate pairs, x and y, or coordinate triples, x, y, and z, are used to define the shape and location of each spatial object or phenomenon. Coordinates represent the longitude and latitude of a specific point on a map. The longitude is the east or west location of a point, and the latitude is the north or south location of a point.  
 __Attributes__ are feature characteristics that can be plotted on a map.  
@@ -84,3 +73,15 @@ Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights
 ##Additional resourcese and useful links
 ["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)
 ["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html) 
+
+
+```{r}
+install.packages("EBImage")
+library(EBImage) #comp cant find package
+g <- system.file("img", "dora.gif", package = "EBImage")
+gif <- readImage(g)
+display(gif)
+````
+
+image: ![We're the map!]("http://cdn.elciudadano.cl/wp-content/uploads/2015/03/Mapa-dora.gif")
+<img src="img/dora.gif/>"
