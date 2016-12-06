@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
     tidy.opts = list(width.cutoff = 75),
     fig.path = "img/",
     toc = TRUE,
-    toc_depth = 2
+    toc_float = TRUE
 )
 ```
 
@@ -49,7 +49,15 @@ You can project anything that you want on a map using geospatial methods in R. D
 * __Access__, __analyze__, and __transform__ metadata
 * MAPS, MAPS MAPS!
 
-image: ![We're the map!]("C:\Users\Allison\Desktop\img\dora.gif")
+```{r}
+install.packages("EBImage")
+library(EBImage) #comp cant find package
+g <- system.file("img", "dora.gif", package = "EBImage")
+gif <- readImage(g)
+display(gif)
+````
+
+image: ![We're the map!]("http://cdn.elciudadano.cl/wp-content/uploads/2015/03/Mapa-dora.gif")
 <img src="img/dora.gif/>"
 
 ##Key Concepts
