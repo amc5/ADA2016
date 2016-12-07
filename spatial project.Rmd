@@ -30,9 +30,9 @@ Geospatial information is critical for analyzing data on landscapes, range, demo
 
 ##Why use R??
 
-<img src="img/dora2.gif" width="420px"/>
-
 You can project anything that you want on a map using geospatial methods in R. Developers have been creating and updating R spatial data packages for the alst 10 years. R is equipped to handle the large data sets that are often required for spatial analysis. Geographic Information Systems (GIS) is a computer based system to aid in the collection, maintenance, storage, analysis, output, and distribution of spatial data and information. However, ArcGIS is a very expensive software ($1,500 for a single license), but all of its skills and tricks can be done in R for free!
+
+<img src="img/dora2.gif" width="420px"/>
 
 ##Applications:
 * Create maps
@@ -101,7 +101,6 @@ __Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat as
 
 ##Heat map of Titi Monkey distribution
 ```{r}
-#Heat map of all the Titis in Tiputini
 hothothot <- ggplot(points, aes(x=UTMX, y=UTMY)) + geom_point() + stat_density2d(aes(fill=..density..), geom = "tile", contour = FALSE) + scale_fill_gradient2(low = "white", high = "red")
 hothothot
 ```
