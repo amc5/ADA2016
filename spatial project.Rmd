@@ -25,7 +25,8 @@ knitr::opts_chunk$set(
 ##Objectives: 
 >In this lesson, you will learn about geospatial information and the analyses that can be done with it. We will download, manipulate, and transform data sets. Data can be projected in different ways for different purposes. We will use both home range data and geographic range data for our examples, and overlay these layers with other relevant data layers, such as altitude and land forms. This data can be visually and statistically analyzed. Finally, we will create a publication ready map!
 
-Geospatial information is critical for analyzing data on landscapes, range, demographics, etc. Visualizing geospatial data on a map is helpful for thinking about the implications of your results. Spatial data analyses address questions that cannot be answered by simply looking at the data themselves, and are concerned with the quantitative location of important features. Geospatial data has a geographic component to it. It is used to plot locations, regions, ranges, etc. 
+##Introduction
+Geospatial information is critical for analyzing data on landscapes, range, demographics, etc. Visualizing geospatial data on a map is helpful for thinking about the implications of your results. Spatial data analyses address questions that cannot be answered by simply looking at the data themselves, and are concerned with the quantitative location of important features.
 
 ##Why use R??
 
@@ -40,11 +41,12 @@ You can project anything that you want on a map using geospatial methods in R. D
 * Predict variables
 * Layers and layers of spatial data visualization
 
-##Useful skills:
+##Useful skills you'll learn today:
 * __Install__ basemaps from multiple sources
 * __Subsetting__ internet based data
 * __Create__ and/or download shapefiles
 * __Manipulate__ shapefiles and polygons
+* Range __analyses__
 * __Access__, __analyze__, and __transform__ metadata
 * MAPS, MAPS, MAPS!
 
@@ -72,22 +74,22 @@ __Grid__: collection of points or rectangular cells, organised in a regular latt
 <img src="img/polygons.jpg" height="420px"/>
 
 ##Current research and applications
-Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75. 
-* Meta-analysis to quantify the global distribution, host range, and diversity of non-human primate malarias globally
-* Using R, survey data was merged with IUCN spatial data for priamte species geographic range
-* This map shows prevalence of primate malarias by region. Non-white portions of pie charts show proportion infected and reflect sampling method
+__Faust C, Dobson AP. 2015. Primate malarias: diversity, distribution and insights for zoonotic Plasmodium. One Health 1:66-75.__  
+* Meta-analysis to quantify the global distribution, host range, and diversity of non-human primate malarias globally  
+* Using R, survey data was merged with IUCN spatial data for primate species geographic range  
+* This map shows prevalence of primate malarias by region. Non-white portions of pie charts show proportion infected and reflect sampling method  
 
 <img src="img/malaria.jpg" height="600px"/>
 
-Williams AN, Ulm S, Cook AR, Langley MC, Collard M. 2013. Human refugia in Australia during the Last Glacial Maximum and Terminal Pleistocene: a geospatial analysis of the 25-12 ka Australian archaeological record. Journal of Archaeological Science 40:4612-4625.
-* Evaluate models of Aboriginal Australian popoulation response to climate change using comprehensive continent-wide dataset of archaeological radiocarbon ages and geospatial techniques.
-* Used ArcGIS, R, and Geospatial Modelling Environment (GME) 
+__Williams AN, Ulm S, Cook AR, Langley MC, Collard M. 2013. Human refugia in Australia during the Last Glacial Maximum and Terminal Pleistocene: a geospatial analysis of the 25-12 ka Australian archaeological record. Journal of Archaeological Science 40:4612-4625.__  
+* Evaluate models of Aboriginal Australian popoulation response to climate change using comprehensive continent-wide dataset of archaeological radiocarbon ages and geospatial techniques.  
+* Used ArcGIS, R, and Geospatial Modelling Environment (GME)  
 
 <img src="img/australia.jpg" width="500px"/>
 
-Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat association patterns and roosting home ranges reveal a novel social structure among bats. Animal Behavior 68:507-521.
-* Using GIS methods from field work GPS points, authors found that various social groups of the same species overalp in space, but rarely interact socially, perhaps based on kinship and cooperation.
-* Map shows different habitat types (in gray) and roosting home range polygons of 21 social groups of _Thyroptera tricolor_
+__Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat association patterns and roosting home ranges reveal a novel social structure among bats. Animal Behavior 68:507-521.__  
+* Using GIS methods from field work GPS points, authors found that various social groups of the same species overalp in space, but rarely interact socially, perhaps based on kinship and cooperation.  
+* Map shows different habitat types (in gray) and roosting home range polygons of 21 social groups of _Thyroptera tricolor_  
 
 <img src="img/bats.jpg" height="420px"/>
  
@@ -95,17 +97,3 @@ Vonhof MJ, Whitehead H, Fenton MB. 2003. Analysis of Spix's disc-winged bat asso
 ["Use R!: Applied Spatial Data Analysis with R"] (http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf)  
 ["R useful cheatsheet"] (www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)   
 ["Introduction to Visualizing Spatial Data in R"] (https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf)
-
-
-```{r}
-## Simulate 10 realizations of a Poisson random variable
-for (i in 1:10) {
-    print(rpois(n = 1, lambda = 5))
-}
-library(spatstat)
-magicLand <- rpoispp(lambda = 0.5, win = owin(c(0, 10), c(0, 10)))
-plot(magicLand)
-plot(rpoispp(lambda = 0.5, win = owin(c(0, 10), c(0, 10))))
-# window area and number of points
-summary(magicLand)
-magicLand$n/100  #this is the intensity of the simulated map
